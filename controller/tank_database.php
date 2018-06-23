@@ -88,5 +88,16 @@ class Tank_database {
               die('Query problem' . mysqli_error($this->db_connect));
           }  
       }
+      
+      
+      public function insert_user_details($data) {
+        $sql = "INSERT INTO user (`username`,`email`, `firstname`, `lastname`, `address`, `city`, `country`, `postal`,`deviceId`,`phoneNumber`,`password`) VALUES ('$data[username]','$data[email]','$data[firstname]','$data[lastname]','$data[address]','$data[city]','$data[country]','$data[postal]','$data[deviceId]','$data[phoneNumber]','$data[password]')";
+        if (mysqli_query($this->db_connect, $sql)) {
+            $message = "Successfully Added an User";
+            return $message;
+        } else {
+            die('Query problem' . mysqli_error($this->db_connect));
+        }
+    }
 
 }

@@ -29,27 +29,27 @@ include('./header_menu_left.php');
               </div>
             </form>
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#pablo">
                   <i class="material-icons">dashboard</i>
                   <p class="d-lg-none d-md-block">
                     Stats
                   </p>
                 </a>
-              </li>
+              </li> -->
               
               <?php
                                 include './notification_list.php';
                             ?>
                             
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#pablo">
                   <i class="material-icons">person</i>
                   <p class="d-lg-none d-md-block">
                     Account
                   </p>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>

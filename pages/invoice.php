@@ -31,25 +31,25 @@ $result = mysqli_query($mysqli, "SELECT * FROM test ORDER BY id DESC"); // using
                 </div>
             </form>
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#pablo">
                         <i class="material-icons">dashboard</i>
                         <p>
                             <span class="d-lg-none d-md-block">Stats</span>
                         </p>
                     </a>
-                </li>
+                </li> -->
                 <?php
                                 include './notification_list.php';
                 ?>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#pablo">
                         <i class="material-icons">person</i>
                         <p>
                             <span class="d-lg-none d-md-block">Account</span>
                         </p>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>

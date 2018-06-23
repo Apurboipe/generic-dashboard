@@ -1,5 +1,10 @@
 <?php
 include('./header_menu_left.php');
+
+if(isset($_POST['btn'])){
+    $message=$obj_tank->insert_user_details($_POST);
+}
+
 ?>
         <div class="main-panel">
       <!-- Navbar -->
@@ -25,31 +30,32 @@ include('./header_menu_left.php');
               </div>
             </form>
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#pablo">
                   <i class="material-icons">dashboard</i>
                   <p class="d-lg-none d-md-block">
                     Stats
                   </p>
                 </a>
-              </li>
+              </li> -->
               <?php
                                 include './notification_list.php';
                             ?>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#pablo">
                   <i class="material-icons">person</i>
                   <p class="d-lg-none d-md-block">
                     Account
                   </p>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
       </nav>
       <!-- End Navbar -->
       <div class="content">
+          
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-8">
@@ -59,7 +65,8 @@ include('./header_menu_left.php');
                   <p class="card-category">Complete your profile</p>
                 </div>
                 <div class="card-body">
-                <form action="add.php" method="post">
+                    <?php if(isset($message)){?> <div class="alert alert-success"><h4> <?php echo $message; ?> </h4></div> <?php }?>
+                <form action="" method="post">
                 <div class="row">
 
 <div class="col-md-6">
@@ -137,7 +144,7 @@ include('./header_menu_left.php');
     </div>
 </div>
 </div>
-                    <button type="submit" name="Submit" class="btn btn-primary pull-right">Update Profile</button>
+                    <button type="submit" name="btn" class="btn btn-primary pull-right">Update Profile</button>
                     <div class="clearfix"></div>
                   </form>
                 </div>

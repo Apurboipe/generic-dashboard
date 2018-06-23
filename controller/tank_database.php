@@ -25,6 +25,17 @@ class Tank_database {
       }
 
 
+      public function select_all_user_info(){
+        $sql="SELECT * From user";
+          if (mysqli_query($this->db_connect, $sql)){
+          $query_result = mysqli_query($this->db_connect, $sql);
+              return $query_result;
+          } else {
+              die('Query problem' . mysqli_error($this->db_connect));
+          }  
+      }
+
+
       public function select_all_notifications(){
         $sql="SELECT * From tank_notification ORDER BY notification_id DESC";
           if (mysqli_query($this->db_connect, $sql)){

@@ -117,17 +117,26 @@ include('./header_menu_left.php');
     </div>
 </div>
 </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>About Me</label>
-                          <div class="form-group">
-                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                            <textarea class="form-control" rows="5"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+<div class="row">
+<div class="col-md-4">
+    <div class="form-group">
+        <label class="bmd-label-floating">Device Id</label>
+        <input type="text" class="form-control" name="deviceId" required>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="form-group">
+        <label class="bmd-label-floating">Phone Number</label>
+        <input type="text" class="form-control" name="phoneNumber"required>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="form-group">
+        <label class="bmd-label-floating">Password</label>
+        <input type="password" class="form-control" name="password"required>
+    </div>
+</div>
+</div>
                     <button type="submit" name="Submit" class="btn btn-primary pull-right">Update Profile</button>
                     <div class="clearfix"></div>
                   </form>

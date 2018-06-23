@@ -2,6 +2,7 @@
 require '../controller/tank_database.php';
 $obj_tank = new Tank_database();
 $query_result=$obj_tank->select_all_tank_info();
+$query_result1=$obj_tank->select_all_user_info();
 ?>
 
 <!DOCTYPE html>
@@ -43,9 +44,10 @@ $query_result=$obj_tank->select_all_tank_info();
         Tip 2: you can also add an image using data-image tag
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href="#" class="simple-text logo-normal">
+          Water Tank
         </a>
+        
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -62,29 +64,29 @@ $query_result=$obj_tank->select_all_tank_info();
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables.php">
+            <a class="nav-link" href="./user_list.php">
               <i class="material-icons">content_paste</i>
-              <p>Table List</p>
+              <p>Registered User</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <!-- <li class="nav-item ">
             <a class="nav-link" href="./typography.php">
               <i class="material-icons">library_books</i>
               <p>Typography</p>
             </a>
-          </li>
-          <li class="nav-item ">
+          </li> -->
+          <!-- <li class="nav-item ">
             <a class="nav-link" href="./icons.php">
               <i class="material-icons">bubble_chart</i>
               <p>Icons</p>
             </a>
-          </li>
-          <li class="nav-item ">
+          </li> -->
+          <!-- <li class="nav-item ">
             <a class="nav-link" href="./map.php">
               <i class="material-icons">location_ons</i>
               <p>Maps</p>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="./tank_details.php">
               <i class="material-icons">call_to_action</i>
